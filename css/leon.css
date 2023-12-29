@@ -107,6 +107,24 @@ body {
 .header .links .icon span:last-child {
   width: 100%;
 }
+/* start edit */
+.header .links ul li{
+    position: relative;
+}
+.header .links ul li::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background: var(--main-color);
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.8s;
+}
+.header .links ul li:hover::after {
+    width: 100%;
+}
+/* end edit */
 .header .links ul {
   list-style: none;
   margin: 0;
